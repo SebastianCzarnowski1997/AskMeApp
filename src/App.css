@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans',
+    sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #363636;
+  color: white;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mainDiv h1 {
+  margin-top: 30px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 20vw;
+}
+
+.header {
+  position: absolute;
+  left: 2%;
+  color: white;
+}
+
+.logo {
+  color: white;
+}
+
+.logo div i {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.nav-item {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width .3s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+  transition: width .5s;
+}
+
+.nav-item:nth-child(1) {
+  height: 51%;
+  flex-wrap: wrap;
+}
+
+.different {
+  color: black;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border: 0px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width .3s;
+}
+
+.btn:hover::after {
+  width: 100%;
+  transition: width .5s;
+}
+
+.spanColor {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.spanColor:hover {
+  color: white;
+}
+
+.spanColor::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width .4s;
+}
+
+.spanColor:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+
+.containerYEs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 60%;
+  height: auto;
+  border: 2px solid #ffffff;
+  margin: 100px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  transition: .2s;
+}
+
+.containerYEs::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-top: 0px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-left: 0px solid #ffffff;
+  top: 100%;
+  left: 50%;
+  margin-left: -25px;
+  content: '';
+  transform: rotate(45deg);
+  margin-top: -25px;
+  background: #363636;
+}
+
+.addComment {
+  display: flex;
+  flex-direction: column;
+}
+
+.addComment form {
+  margin: 5px;
+}
+
+.addComment form input,
+.logIn input,
+.inputSignUp input {
+  margin: 10px;
+  border: none;
+  font-size: 17px;
+  width: 20vh;
+  border-bottom: 2px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.logIn input::placeholder,
+.addComment form input::placeholder,
+.inputSignUp input::placeholder {
+  text-align: center;
+}
+
+.addComment form input:focus,
+.logIn input:focus,
+.inputSignUp input:focus {
+  outline: none !important;
+}
+
+.logIn button .addComment form button,
+.logIn button,
+.inputSignUp button {
+  background-color: transparent;
+  padding: 2px 10px;
+  color: #DEF2F1;
+  border: 2px solid #DEF2F1;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 1.5s;
+}
+
+.addComment form button:hover,
+.logIn button:hover,
+.inputSignUp button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.logIn button {
+  margin: 10px;
+}
+
+.logIn span {
+  margin-bottom: 20px;
+}
+
+.logIn h2 {
+  text-align: center;
+  color: white;
+}
+
+.signUp h2 {
+  text-align: center;
+  color: white;
+}
+
+.inputSignUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 35vh;
+}
+
+.maininput form input {
+  margin: 10px;
+  border: none;
+  font-size: 17px;
+  width: 50vh;
+  border-bottom: 2px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.maininput form input:focus {
+  outline: none !important;
+}
+
+.maininput form input::placeholder {
+  text-align: center;
+}
+
+.maininput button {
+  background-color: transparent;
+  padding: 2px 10px;
+  color: #DEF2F1;
+  border: 2px solid #DEF2F1;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 1.5s;
+
+}
+
+.maininput button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+
+
+
+@media(max-width: 800px) {
+  .logo div i {
+    font-size: 15px;
+  }
+
+  .spanColor {
+    font-size: 13px;
+    position: absolute;
+    left: 34%;
+  }
+
+  .header {
+    left: 0%;
+  }
+
+  .logo {
+    color: white;
+  }
+
+  .logo div i {
+    margin: 10px;
+    font-size: 13px;
+  }
+
+  .buttons {
+    width: 25vw;
+    position: absolute;
+    right: 0;
+  }
+
+
+  .logo div i span {
+    font-size: 13px;
+  }
+
+  .containerYEs {
+    width: 80%;
+  }
+
+  .mainDiv h1 {
+    font-size: 25px;
+  }
+
+  .signUp h2,
+  .logIn h2 {
+    font-size: 21px;
+  }
+
+
+  .signUp span,
+  .logIn span {
+    font-size: 14px;
+  }
+
+  .logIn input::placeholder,
+  .addComment form input::placeholder,
+  .inputSignUp input::placeholder {
+    font-size: 13px;
+  }
+
+  .inputSignUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+  }
+
+
+}
+
+
+@media(max-width: 800px) and (orientation: landscape) {
+  .inputSignUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+  }
+
+
+  .logIn input::placeholder,
+  .addComment form input::placeholder,
+  .inputSignUp input::placeholder {
+    text-align: center;
+    font-size: 10px;
+  }
+}
